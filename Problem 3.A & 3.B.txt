@@ -1,0 +1,14 @@
+3.A The out put is not sorted 
+
+3.B algo smallerThan:Start at tree root as variable node, look for variable smaller than X
+	if (node < X)
+		 print node
+	smallerThan(node.left)
+	smallerThan(node.right)
+	
+The time complexity is O(n)
+
+
+	
+	
+	
