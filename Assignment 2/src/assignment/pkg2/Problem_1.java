@@ -1,8 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/*********************************************************************
+ Purpose/Description: This program server to solve assignment question 1
+ Author’s Panther ID: 5676297
+ Certification:
+ I hereby certify that this work is my own and none of it is the work of
+ any other person.
+ ********************************************************************/ 
+
 package assignment.pkg2;
 
 /**

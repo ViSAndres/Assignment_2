@@ -1,8 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+/*********************************************************************
+ Purpose/Description: This program server to solve assignment question 3.C
+ Author’s Panther ID: 5676297
+ Certification:
+ I hereby certify that this work is my own and none of it is the work of
+ any other person.
+ ********************************************************************/ 
 package assignment.pkg2;
 import java.util.*;
 /**
@@ -20,8 +22,9 @@ public class Problem_3C {
      */
     public void replaceKey(Integer oldKey, Integer newKey) {
         int i;
-        for(i =0; i < array.lenght -1; i++){
-            if (array[i].equals(oldKey))
+        int[] array  = {99, 64, 42, 54, 32, 28, 6, 19, 7, 26, 4 };
+        for(i =0; i < array.length -1; i++){
+            if (array[i] == oldKey)
                 break;
         }
         if (i == array.length){
@@ -29,9 +32,10 @@ public class Problem_3C {
        return;
     }
         array[i] = newKey;
-        if (i>1 && array[i].compareTo(array[i/2])<0)
-       heapUp(i);
-   else
-       heapDown(i);
+        if (i > 1 && array[i] < array[i/2])
+        perlocateUp(i);
+    
+    else
+       perlocateDown(i);
     }
 }
